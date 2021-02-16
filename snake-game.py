@@ -9,8 +9,6 @@ frame_size_y = 480
 
 # Checks for errors encountered
 check_errors = pygame.init()
-# pygame.init() example output -> (6, 0)
-# second number in tuple gives number of errors
 if check_errors[1] > 0:
     print(f'[!] Had {check_errors[1]} errors when initialising game, exiting...')
     sys.exit(-1)
