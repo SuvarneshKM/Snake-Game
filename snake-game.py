@@ -137,8 +137,6 @@ while True:
     # Snake food
     pygame.draw.rect(game_window, white, pygame.Rect(food_pos[0], food_pos[1], 10, 10))
 
-    # Game Over conditions
-    # Getting out of bounds
     if snake_pos[0] < 0 or snake_pos[0] > frame_size_x-10:
         game_over()
     if snake_pos[1] < 0 or snake_pos[1] > frame_size_y-10:
