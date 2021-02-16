@@ -131,9 +131,7 @@ while True:
     # GFX
     game_window.fill(black)
     for pos in snake_body:
-        # Snake body
-        # .draw.rect(play_surface, color, xy-coordinate)
-        # xy-coordinate -> .Rect(x, y, size_x, size_y)
+
         pygame.draw.rect(game_window, green, pygame.Rect(pos[0], pos[1], 10, 10))
 
     # Snake food
