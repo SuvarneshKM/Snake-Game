@@ -25,11 +25,9 @@ green = pygame.Color(0, 255, 0)
 blue = pygame.Color(0, 0, 255)
 
 
-# FPS (frames per second) controller
 fps_controller = pygame.time.Clock()
 
 
-# Game variables
 snake_pos = [100, 50]
 snake_body = [[100, 50], [100-10, 50], [100-(2*10), 50]]
 
