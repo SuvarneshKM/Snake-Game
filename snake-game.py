@@ -40,7 +40,6 @@ change_to = direction
 score = 0
 
 
-# Game Over
 def game_over():
     my_font = pygame.font.SysFont('times new roman', 90)
     game_over_surface = my_font.render('YOU DIED', True, red)
@@ -55,7 +54,6 @@ def game_over():
     sys.exit()
 
 
-# Score
 def show_score(choice, color, font, size):
     score_font = pygame.font.SysFont(font, size)
     score_surface = score_font.render('Score : ' + str(score), True, color)
