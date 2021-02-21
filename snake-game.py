@@ -65,15 +65,12 @@ def show_score(choice, color, font, size):
     game_window.blit(score_surface, score_rect)
 
 
-# Main logic
 while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
-        # Whenever a key is pressed down
         elif event.type == pygame.KEYDOWN:
-            # W -> Up; S -> Down; A -> Left; D -> Right
             if event.key == pygame.K_UP or event.key == ord('w'):
                 change_to = 'UP'
             if event.key == pygame.K_DOWN or event.key == ord('s'):
@@ -82,7 +79,6 @@ while True:
                 change_to = 'LEFT'
             if event.key == pygame.K_RIGHT or event.key == ord('d'):
                 change_to = 'RIGHT'
-            # Esc -> Create event to quit the game
             if event.key == pygame.K_ESCAPE:
                 pygame.event.post(pygame.event.Event(pygame.QUIT))
 
