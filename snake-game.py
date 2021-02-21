@@ -100,7 +100,6 @@ while True:
     if direction == 'RIGHT':
         snake_pos[0] += 10
 
-    # Snake body growing mechanism
     snake_body.insert(0, list(snake_pos))
     if snake_pos[0] == food_pos[0] and snake_pos[1] == food_pos[1]:
         score += 1
@@ -108,7 +107,6 @@ while True:
     else:
         snake_body.pop()
 
-    # Spawning food on the screen
     if not food_spawn:
         food_pos = [random.randrange(1, (frame_size_x//10)) * 10, random.randrange(1, (frame_size_y//10)) * 10]
     food_spawn = True
