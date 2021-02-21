@@ -3,11 +3,9 @@ import pygame, sys, time, random
 
 difficulty = 25
 
-# Window size
 frame_size_x = 720
 frame_size_y = 480
 
-# Checks for errors encountered
 check_errors = pygame.init()
 if check_errors[1] > 0:
     print(f'[!] Had {check_errors[1]} errors when initialising game, exiting...')
